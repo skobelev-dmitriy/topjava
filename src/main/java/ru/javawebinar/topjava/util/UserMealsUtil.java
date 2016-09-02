@@ -35,7 +35,7 @@ public class UserMealsUtil {
         );
         long start = System.currentTimeMillis();
         List<UserMealWithExceed> filteredWithExceeded = getFilteredWithExceeded(mealList, LocalTime.of(7, 0), LocalTime.of(13, 0), 2000);
-        filteredWithExceeded.forEach(meal->System.out.println(meal));
+        filteredWithExceeded.forEach(System.out::println);
         long finish = System.currentTimeMillis();
         long timeResult = finish - start;
         System.out.println(timeResult);
